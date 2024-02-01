@@ -2,15 +2,11 @@ package Test.Test1;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
-
-import com.google.common.collect.Table.Cell;
-
 import java.io.FileInputStream;
 import java.io.IOException;
 
@@ -31,6 +27,7 @@ public class migration {
 		driver.findElement(By.xpath("//input[@id='pwd']")).sendKeys("Unite@123");
 		driver.findElement(By.xpath("//button[@id='btnvalidatelogin']")).click();
 		Thread.sleep(2000);
+		System.out.println("Test");
 		driver.findElement(By.xpath("//div[@class='nav-subhead']/div/ul/li[2]")).click();
 		driver.findElement(By.xpath("//div[@class='nav-subhead']/div/ul/li[2]/ul/li[3]")).click();
 		driver.findElement(By.xpath("//div[@class='nav-subhead']/div/ul/li[2]/ul/li[3]/ul/li")).click();
